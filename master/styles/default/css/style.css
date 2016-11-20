@@ -163,3 +163,459 @@ img {
   z-index: 1;
   position: relative;
 }
+/* ------------ Блок-инфо ------------ */
+.info-block {
+  text-align: center;
+}
+.info-block__item {
+  margin-top: 40px;
+}
+.info-block__text {
+  margin-top: 15px;
+}
+/* ------------ Дома ------------ */
+.houses {
+  background: #cdb68b;
+  margin-top: 30px;
+}
+.houses-item {
+  margin-bottom: 20px;
+}
+.houses-item__thumbnail {
+  position: relative;
+}
+.houses-item__img {
+  width: 100%;
+}
+.houses-item__payment {
+  position: absolute;
+  top: 20px;
+  background: rgba(255,255,255,0.6);
+  padding: 10px 15px;
+}
+.houses-item__area {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #0490d7;
+  color: #fff;
+  font-size: 1.55rem;
+  padding: 5px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.houses-item__area span {
+  margin-top: -7px;
+  display: block;
+  font-size: 0.75rem;
+}
+.houses-item__info {
+  width: 50%;
+  float: left;
+  margin-top: 10px;
+}
+.houses-item__sector {
+  float: right;
+  width: 50%;
+  margin-top: 10px;
+  text-align: right;
+}
+.houses-item__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.houses-item__price span {
+  font-family: ALS Rubl;
+}
+.houses__button {
+  background: #0490d7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.25rem;
+  text-align: center;
+  display: block;
+}
+/* ------------ Территория ------------ */
+.area__share {
+  background: #0490d7;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 49%;
+  float: left;
+  margin-top: 15px;
+}
+.area__share img {
+  display: block;
+  margin: 0 auto;
+}
+.area__mailto {
+  background: #0490d7;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 49%;
+  float: right;
+  margin-top: 15px;
+}
+.area__mailto img {
+  display: block;
+  margin: 0 auto;
+}
+/* ------------ Почему у нас хорошо ------------ */
+.goods {
+  background: #e4d7c0;
+}
+.goods__title {
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.goods__title span {
+  color: #47730e;
+}
+.goods-item {
+  float: left;
+  width: 50%;
+  height: 140px;
+  margin-top: 30px;
+}
+.goods-item__icon {
+  display: block;
+  width: 100%;
+  height: 90px;
+}
+.goods-item__icon.icon-1 {
+  background: url("icons/goods-item__icon-1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.goods-item__icon.icon-2 {
+  background: url("icons/goods-item__icon-2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.goods-item__icon.icon-3 {
+  background: url("icons/goods-item__icon-3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.goods-item__icon.icon-4 {
+  background: url("icons/goods-item__icon-4.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.goods-item__icon.icon-5 {
+  background: url("icons/goods-item__icon-5.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.goods-item__icon.icon-6 {
+  background: url("icons/goods-item__icon-6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.goods-item__icon.icon-7 {
+  background: url("icons/goods-item__icon-7.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.goods-item__title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+/* ------------ Расположение ------------ */
+.location {
+  background-image: url("img/grass.png");
+}
+.location__title {
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.location-map {
+  position: relative;
+  margin-top: 20px;
+  z-index: 2;
+}
+.location-share {
+  margin-top: 20px;
+}
+.location-share:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  background: #e4d7c0;
+  margin-left: -17px;
+  margin-top: -70px;
+  z-index: 0;
+}
+.location-share__item {
+  position: relative;
+  padding: 10px;
+  width: 32%;
+  margin-right: 2%;
+  float: left;
+  background: #0490d7;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 0.75rem;
+  height: 60px;
+}
+.location-share__item img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.location-share__item:last-child {
+  margin-right: 0;
+  float: right;
+}
+.location-share__mailto {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.location__comment {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  color: #fff;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+/* ------------ О поселке ------------ */
+.about-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #e4d7c0;
+  text-align: center;
+}
+.about-block__title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #47730e;
+}
+.about-block__text strong {
+  font-weight: 600;
+}
+.about-block-item {
+  float: left;
+  width: 50%;
+  height: 160px;
+  margin-bottom: 20px;
+}
+.about-block-item__icon {
+  display: block;
+  width: 100%;
+  height: 90px;
+}
+.about-block-item__icon.icon-1 {
+  background: url("icons/about-block-item__icon-1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.about-block-item__icon.icon-2 {
+  background: url("icons/about-block-item__icon-2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.about-block-item__icon.icon-3 {
+  background: url("icons/about-block-item__icon-3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.about-block-item__icon.icon-4 {
+  background: url("icons/about-block-item__icon-4.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.about-block-item__icon.icon-5 {
+  background: url("icons/about-block-item__icon-5.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.about-block-item__icon.icon-6 {
+  background: url("icons/about-block-item__icon-6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.about-block-item__title {
+  font-weight: 600;
+  font-size: 1.4em;
+  line-height: 1;
+}
+.about-block-item__title span {
+  color: #0490d7;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 10px;
+}
+/* ------------ О поселке ------------ */
+.conception {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  background: #e4d7c0;
+  text-align: center;
+}
+.conception__title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0490d7;
+}
+.conception__text {
+  font-size: 15px;
+}
+.conception__text strong {
+  font-weight: 600;
+}
+/* ------------ СЕО ------------ */
+.seo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+/* ------------ Подвал ------------ */
+.footer {
+  background: #0490d7;
+  height: 340px;
+  color: #fff;
+  position: relative;
+}
+.footer__phone {
+  font-weight: 600;
+}
+.footer__phone:before {
+  content: "";
+  display: inline-block;
+  background: url("icons/phone_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.footer__mailto {
+  margin-top: 10px;
+}
+.footer__mailto:before {
+  content: "";
+  display: inline-block;
+  background: url("icons/mailto_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.footer__mailto-link {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+.footer__logo {
+  background: url("icons/footer__logo.png");
+  width: 130px;
+  height: 110px;
+  background-repeat: no-repeat;
+  background-position: left;
+  font-size: 0.85rem;
+  padding-left: 120px;
+  margin-top: 15px;
+}
+.footer-social {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+}
+.footer-social__item {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.vk {
+  background: url("icons/vk.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.fb {
+  background: url("icons/fb.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.ok {
+  background: url("icons/ok.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.gp {
+  background: url("icons/gp.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.tw {
+  background: url("icons/tw.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.lj {
+  background: url("icons/lj.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.yt {
+  background: url("icons/yt.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.in {
+  background: url("icons/inst.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.footer__developer {
+  background: url("icons/404.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 20px;
+  height: 45px;
+  width: 170px;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  margin-top: 30px;
+}

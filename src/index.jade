@@ -31,13 +31,142 @@ html
 				.home-screen-offer__price от 5 млн. руб.
 			.home-screen-description готовый дом с участком, газом, водоснабжением, канализацией и электричеством
 
-		section.info.layout
+		section.info-block.layout
+			.info-block__item
+				img(src="styles/default/css/icons/info-1.png").info-block__img
+				.info-block__text Охраняемый коттеджный посёлок со сложившейся инфраструктурой
+			.info-block__item
+				img(src="styles/default/css/icons/info-2.png").info-block__img
+				.info-block__text Посёлок «Белая Руза» располагается в 15 минутах езды от красивейшего Озернинского водохранилища
+			.info-block__item
+				img(src="styles/default/css/icons/info-3.png").info-block__img
+				.info-block__text Парки, пруды, места для рыбалки и отдыха,исторические сосны, заботливо посаженные 200 лет назад князем Гагариным
 		section.houses.layout
-		section.goods.layout
-		section.info.layout
+			.houses-item.clearfix
+				.houses-item__thumbnail
+					img(src="styles/default/css/img/houses-item-1.png").houses-item__img
+					.houses-item__payment Рассрочка - 10 лет
+					.houses-item__area 81<span>м<sup>2</sup></span>
+				.houses-item__info
+					.houses-item__title Владение 89
+					.houses-item__price 5 600 000 <span>a</span>
+				.houses-item__sector Участок 11,34 соток
+			.houses-item.clearfix
+				.houses-item__thumbnail
+					img(src="styles/default/css/img/houses-item-2.png").houses-item__img
+					.houses-item__payment Рассрочка - 10 лет
+					.houses-item__area 98<span>м<sup>2</sup></span>
+				.houses-item__info
+					.houses-item__title Владение 156
+					.houses-item__price 3 800 000 <span>a</span>
+				.houses-item__sector Участок 12,344 соток
+			.houses-item.clearfix
+				.houses-item__thumbnail
+					img(src="styles/default/css/img/houses-item-3.png").houses-item__img
+					.houses-item__payment Рассрочка - 10 лет
+					.houses-item__area 45<span>м<sup>2</sup></span>
+				.houses-item__info
+					.houses-item__title Владение 157
+					.houses-item__price 4 900 000 <span>a</span>
+				.houses-item__sector Участок 11,67 соток
+			button.houses__button Показать еще
+
+		section.area.layout.clearfix
+			img(src="styles/default/css/img/area.png").area__img
+			.area__share
+				img(src="styles/default/css/icons/area-share.png")
+				| Поделиться
+			a(href).area__mailto
+				img(src="styles/default/css/icons/area-mailto.png")
+				| В почту
+
+		section.goods.layout.clearfix
+			h2.goods__title Почему <span>у нас хорошо</span>
+			.goods-item
+				.goods-item__icon.icon-1
+				.goods-item__title посёлок уже населён
+			.goods-item
+				.goods-item__icon.icon-2
+				.goods-item__title готовые коттеджи под ключ
+			.goods-item
+				.goods-item__icon.icon-3
+				.goods-item__title круглосуточная охрана
+			.goods-item
+				.goods-item__icon.icon-4
+				.goods-item__title водоснабжение на участке
+			.goods-item
+				.goods-item__icon.icon-5
+				.goods-item__title проложенные дороги
+			.goods-item
+				.goods-item__icon.icon-6
+				.goods-item__title электричество в домах
+			.goods-item
+				.goods-item__icon.icon-7
+				.goods-item__title высокие заборы
+
+		section.location.layout.clearfix
+			h2.location__title Расположение поселка
+			.location-map <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ooPt9RCYa4Xf_8bkV-ZzzZNUnolmwos7&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
+				//.location__comment От МКАДа до Белой Рузы вы добираетесь без светофоров! Вообще!
+			.location-share.clearfix
+				.location-share__item
+					.location-share__social
+						img(src="styles/default/css/icons/area-share.png")
+						| Поделиться
+				.location-share__item
+					a(href).location-share__mailto
+						img(src="styles/default/css/icons/area-mailto.png")
+						| В почту
+				.location-share__item
+					.location-share__navigator
+						img(src="styles/default/css/icons/location-share-navigator.png")
+						| Поделиться
+			.location__comment От МКАДа до Белой Рузы вы добираетесь без светофоров! Вообще!
+		section.about-block.layout.clearfix
+			h2.about-block__title Белая руза
+			.about-block__text <p><strong>Это охраняемый коттеджный посёлок на новорижксом шоссе площадью 35 гектар, где можно просто купить себе дачу</strong></p> <p>Внутри коттеджного поселка созданы каскадные пруды с природными перешейками, вокруг которых располагается зона отдыхас лавочками и древним родником. А для детей предусмотрена современная детская площадка с игровыми конструкциями</p>
+			.about-block-item
+				.about-block-item__icon.icon-1
+				.about-block-item__title Пруды <span>в поселке</span>
+			.about-block-item
+				.about-block-item__icon.icon-2
+				.about-block-item__title Озеро <span>5 км</span>
+			.about-block-item
+				.about-block-item__icon.icon-3
+				.about-block-item__title Железная дорога <span>15 км</span>
+			.about-block-item
+				.about-block-item__icon.icon-4
+				.about-block-item__title Водо&shy;хранилище <span>17 км</span>
+			.about-block-item
+				.about-block-item__icon.icon-5
+				.about-block-item__title Река Руза <span>24 км</span>
+			.about-block-item
+				.about-block-item__icon.icon-6
+				.about-block-item__title Истра <span>46км</span>
+
 		section.conception.layout
-		section.seo.layout
-		section.footer.layout
+			h2.conception__title Концепция посёлка
+			.conception__text <p><strong>Коттеджный поселок на Новой Риге «Белая Руза» является продолжением современной деревни «Бородёнки», где есть парк, водоёмы и дорожки для прогулок</strong></p> <p>На территории самого поселка обустроены три пруда с беседками для рыбалки и зоной отдыха для барбекю. А в 17 км от нас находится живописное озерниское водохранилище, на песчаном берегу которого оборудован пляж, прокат гидроциклов, кафе, пирс, парковка и детская площадка.</p>
+
+		section.seo.layout Коттеджный поселок на Новой Риге «Белая Руза» располагается на землях, ранее принадлежавших княжескому роду Гагариных, вплотную прилегая к исторической аллее 200-х летних сосен, посаженных по распоряжению княжны Варвары Николаевны Голицыной (жены князя) для конных прогулок. В этих великолепных местах прошло детство известных сестёр Гагариных. Одна из них в последствии стала женой «белого генерала» Михаила Дмитриевича Скобелева, участника Русско-турецкой
+
+		section.footer.layout.cleaefix
+			.footer__phone +7 (495) 123-45-67
+			.footer__mailto
+				a(href="").footer__mailto-link Напишите нам
+			.footer__logo Коттеджный поселок «Белая Руза» Новорижское шоссе, 65 км от МКАД © 2016
+			.footer-social
+				.footer-social__item.vk
+				.footer-social__item.fb
+				.footer-social__item.ok
+				.footer-social__item.gp
+				.footer-social__item.tw
+				.footer-social__item.lj
+				.footer-social__item.yt
+				.footer-social__item.in
+			.footer__developer Создание сайта: «Студия 404»
+
+
 
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
 		script(src="https://use.fontawesome.com/e04476514d.js")

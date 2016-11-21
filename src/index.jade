@@ -14,7 +14,7 @@ html
 			.header-logo
 				a(href="/").header-logo__link
 					img(src="styles/default/css/img/logo.png").header-logo__img
-			.header-phone
+			.header-phone +7 (495) <nobr><strong>123-45-67</strong></nobr>
 		section.subheader.layout.clearfix
 			.subheader-burger
 				img(src="styles/default/css/icons/burger.png").subheader-burger__img
@@ -44,7 +44,8 @@ html
 		section.houses.layout
 			.houses-item.clearfix
 				.houses-item__thumbnail
-					img(src="styles/default/css/img/houses-item-1.png").houses-item__img
+					a(href="")
+						img(src="styles/default/css/img/houses-item-1.png").houses-item__img
 					.houses-item__payment Рассрочка - 10 лет
 					.houses-item__area 81<span>м<sup>2</sup></span>
 				.houses-item__info
@@ -53,7 +54,8 @@ html
 				.houses-item__sector Участок 11,34 соток
 			.houses-item.clearfix
 				.houses-item__thumbnail
-					img(src="styles/default/css/img/houses-item-2.png").houses-item__img
+					a(href="")
+						img(src="styles/default/css/img/houses-item-2.png").houses-item__img
 					.houses-item__payment Рассрочка - 10 лет
 					.houses-item__area 98<span>м<sup>2</sup></span>
 				.houses-item__info
@@ -62,7 +64,8 @@ html
 				.houses-item__sector Участок 12,344 соток
 			.houses-item.clearfix
 				.houses-item__thumbnail
-					img(src="styles/default/css/img/houses-item-3.png").houses-item__img
+					a(href="")
+						img(src="styles/default/css/img/houses-item-3.png").houses-item__img
 					.houses-item__payment Рассрочка - 10 лет
 					.houses-item__area 45<span>м<sup>2</sup></span>
 				.houses-item__info
@@ -108,6 +111,7 @@ html
 			h2.location__title Расположение поселка
 			.location-map <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ooPt9RCYa4Xf_8bkV-ZzzZNUnolmwos7&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
 				//.location__comment От МКАДа до Белой Рузы вы добираетесь без светофоров! Вообще!
+			#location-map
 			.location-share.clearfix
 				.location-share__item
 					.location-share__social
@@ -170,6 +174,7 @@ html
 
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
 		script(src="https://use.fontawesome.com/e04476514d.js")
+		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
 		script(src="styles/default/js/main.js")
 
 

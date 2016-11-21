@@ -23,9 +23,8 @@ body {
 .layout {
   min-width: 320px;
   max-width: 960px;
-  width: 320px;
   margin: 0 auto;
-  padding: 17px;
+  padding: 20px;
   box-sizing: border-box;
   position: relative;
 }
@@ -44,13 +43,37 @@ img {
   width: 34%;
   float: left;
 }
+.header-phone {
+  width: 30%;
+  float: right;
+  color: #fff;
+}
+.header-phone:before {
+  content: "";
+  display: inline-block;
+  background: url("icons/phone_icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.header-phone strong {
+  font-weight: 600;
+}
 .header-logo {
   width: 30%;
   float: left;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 .subheader {
   background: #fff;
+  margin-top: -35px;
+  z-index: 1;
 }
 .subheader-burger {
   cursor: pointer;
@@ -65,8 +88,9 @@ img {
   margin-top: -5px;
 }
 .subheader-mailto {
-  float: left;
+  float: right;
   width: 10%;
+  text-align: right;
 }
 /* ------------ Хоум-скрин ------------ */
 .home-screen {
@@ -82,7 +106,7 @@ img {
   width: 100%;
   height: 175px;
   z-index: 0;
-  margin-left: -17px;
+  margin-left: -20px;
   bottom: 0;
   background: #0490d7;
   opacity: 0.6;
@@ -171,7 +195,9 @@ img {
   margin-top: 40px;
 }
 .info-block__text {
+  margin: 0 auto;
   margin-top: 15px;
+  max-width: 480px;
 }
 /* ------------ Дома ------------ */
 .houses {
@@ -179,7 +205,32 @@ img {
   margin-top: 30px;
 }
 .houses-item {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+@media (min-width: 480px) {
+  .houses-item {
+    width: 48%;
+    float: left;
+    margin-top: 0px;
+  }
+  .houses-item:nth-child(2n) {
+    float: right;
+  }
+}
+@media (min-width: 840px) {
+  .houses-item {
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+    margin-top: 0px;
+  }
+  .houses-item:nth-child(2n) {
+    float: left;
+  }
+  .houses-item:nth-child(3n) {
+    float: right;
+    margin-right: 0%;
+  }
 }
 .houses-item__thumbnail {
   position: relative;
@@ -190,7 +241,8 @@ img {
 .houses-item__payment {
   position: absolute;
   top: 20px;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.7);
+  border-radius: 0 5px 5px 0;
   padding: 10px 15px;
 }
 .houses-item__area {
@@ -243,6 +295,9 @@ img {
   display: block;
 }
 /* ------------ Территория ------------ */
+.area__img {
+  width: 100%;
+}
 .area__share {
   background: #0490d7;
   color: #fff;
@@ -292,6 +347,20 @@ img {
   width: 50%;
   height: 140px;
   margin-top: 30px;
+}
+@media (min-width: 840px) {
+  .goods-item {
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+  }
+  .goods-item:nth-child(2n) {
+    float: left;
+  }
+  .goods-item:nth-child(3n) {
+    float: right;
+    margin-right: 0%;
+  }
 }
 .goods-item__icon {
   display: block;
@@ -357,6 +426,14 @@ img {
   position: relative;
   margin-top: 20px;
   z-index: 2;
+  display: none;
+}
+#location-map {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-top: 20px;
+  z-index: 2;
 }
 .location-share {
   margin-top: 20px;
@@ -368,7 +445,7 @@ img {
   width: 100%;
   height: 150px;
   background: #e4d7c0;
-  margin-left: -17px;
+  margin-left: -20px;
   margin-top: -70px;
   z-index: 0;
 }
@@ -404,10 +481,10 @@ img {
   display: block;
   box-sizing: border-box;
   color: #fff;
-  margin-top: 30px;
+  margin-top: 40px;
   width: 100%;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 /* ------------ О поселке ------------ */
 .about-block {
@@ -424,6 +501,10 @@ img {
   letter-spacing: 2px;
   color: #47730e;
 }
+.about-block__text {
+  max-width: 640px;
+  margin: 0 auto;
+}
 .about-block__text strong {
   font-weight: 600;
 }
@@ -432,6 +513,20 @@ img {
   width: 50%;
   height: 160px;
   margin-bottom: 20px;
+}
+@media (min-width: 840px) {
+  .about-block-item {
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+  }
+  .about-block-item:nth-child(2n) {
+    float: left;
+  }
+  .about-block-item:nth-child(3n) {
+    float: right;
+    margin-right: 0%;
+  }
 }
 .about-block-item__icon {
   display: block;
@@ -496,6 +591,8 @@ img {
 }
 .conception__text {
   font-size: 15px;
+  max-width: 640px;
+  margin: 0 auto;
 }
 .conception__text strong {
   font-weight: 600;
@@ -506,6 +603,8 @@ img {
   padding-bottom: 30px;
   text-align: center;
   font-size: 15px;
+  max-width: 640px;
+  margin: 0 auto;
 }
 /* ------------ Подвал ------------ */
 .footer {

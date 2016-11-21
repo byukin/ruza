@@ -3,6 +3,7 @@
 @import url('fonts/andantinoscript/font.css') // Andantino
 @import url('fonts/daxline/font.css') // Daxline Pro
 @import url('fonts/daxlinecyr/font.css') // Daxline Cyr
+@import url('../js-libs/owl-carousel/owl.carousel.css')
 $color = #0490d7
 
 html
@@ -37,6 +38,9 @@ img
 ul,li
 	margin 0
 	padding 0
+.image-slider
+	margin-top 20px
+	margin-bottom 20px
 /* ------------ Шапка ------------ */
 
 .header
@@ -98,6 +102,10 @@ ul,li
 	width 100%
 	top -90px
 	z-index 10
+	left 0
+	right 0
+	padding 20px
+	box-sizing border-box
 	transition-duration .3s
 .header-fixed-burger
 	float left
@@ -596,10 +604,9 @@ ul,li
 /* ------------ О поселке ------------ */
 
 .conception
-	padding-top 0px
+	padding-top 30px
 	padding-bottom 30px
 	background #e4d7c0
-	text-align center
 .conception__title
 	text-align center
 	font-size 1.5rem
@@ -611,6 +618,7 @@ ul,li
 	font-size 15px
 	max-width 640px
 	margin 0 auto
+	text-align center
 	strong
 		font-weight 600
 

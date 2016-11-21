@@ -9,12 +9,13 @@ html
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		link(href="styles/default/css/style.css",rel="stylesheet")
 	body
+		// http://5xuo8s.axshare.com/белая_руза___главная_страница.html
 		nav#menu.swipe-menu
 			.swipe-menu-logo
 			.swipe-menu-nav
 				ul
 					li.swipe-menu-nav__item
-						a(href="").swipe-menu-nav__link Концепция поселка
+						a(href="conception.html").swipe-menu-nav__link Концепция поселка
 					li.swipe-menu-nav__item
 						a(href="").swipe-menu-nav__link Рядом
 					li.swipe-menu-nav__item
@@ -43,7 +44,7 @@ html
 				input(type="textarea" placeholder="Ваш комментарий").popup-form__textarea
 				button(type="submit").popup-form__submit Оставить запрос
 
-		section.header-fixed.layout.clearfix
+		section.header-fixed.clearfix
 			.header-fixed-burger.toggle-button-fixed
 				img(src="styles/default/css/icons/burger.png").header-fixed-burger__img
 			.header-fixed-logo
@@ -54,7 +55,7 @@ html
 					a(href="").header-fixed-contact__link
 						img(src="styles/default/css/icons/header-fixed-phone.png").header-fixed-contact__img
 				.header-fixed-contact__mailto
-					a(href="").header-fixed-contact__link
+					.header-fixed-contact__link
 						img(src="styles/default/css/icons/mail_icon.svg").header-fixed-contact__img
 		main#panel
 			section.header.layout.clearfix
@@ -222,7 +223,7 @@ html
 
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
 		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
-		script(src="styles/default/js-libs/slideout.js")
+		script(src="styles/default/js-libs/slideout/slideout.js")
 		script(src="styles/default/js/main.js")
 
 

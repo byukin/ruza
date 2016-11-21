@@ -3,6 +3,7 @@
 @import url("fonts/andantinoscript/font.css");
 @import url("fonts/daxline/font.css");
 @import url("fonts/daxlinecyr/font.css");
+@import url("../js-libs/owl-carousel/owl.carousel.css");
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -38,6 +39,10 @@ ul,
 li {
   margin: 0;
   padding: 0;
+}
+.image-slider {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /* ------------ Шапка ------------ */
 .header {
@@ -106,6 +111,10 @@ li {
   width: 100%;
   top: -90px;
   z-index: 10;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  box-sizing: border-box;
   transition-duration: 0.3s;
 }
 .header-fixed-burger {
@@ -684,10 +693,9 @@ li {
 }
 /* ------------ О поселке ------------ */
 .conception {
-  padding-top: 0px;
+  padding-top: 30px;
   padding-bottom: 30px;
   background: #e4d7c0;
-  text-align: center;
 }
 .conception__title {
   text-align: center;
@@ -701,6 +709,7 @@ li {
   font-size: 15px;
   max-width: 640px;
   margin: 0 auto;
+  text-align: center;
 }
 .conception__text strong {
   font-weight: 600;

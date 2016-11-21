@@ -1,4 +1,49 @@
-ymaps.ready(init);
+
+var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70
+});
+document.querySelector('.toggle-button').addEventListener('click', function() {
+        slideout.toggle();
+      });
+document.querySelector('.toggle-button-fixed').addEventListener('click', function() {
+        slideout.toggle();
+      });
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 140) {
+	$('.header-fixed').css('top','0px');
+  } else {
+	$('.header-fixed').css('top','-90px');
+
+  }
+});
+slideout.on('translate', function(translated) {
+    $('.header-fixed').css('transition','-webkit-transform 0ms ease');
+    $('.header-fixed').css('-webkit-transform','translateX('+translated+'px)');
+    $('.header-fixed').css('transform','translateX('+translated+'px)');
+});
+
+slideout.on('beforeclose', function() {
+    $('.header-fixed').css('transition','-webkit-transform 300ms ease');
+    $('.header-fixed').css('-webkit-transform','translateX(0px)');
+    $('.header-fixed').css('transform','translateX(0px)');
+});
+
+slideout.on('beforeopen', function() {
+    $('.header-fixed').css('transition','-webkit-transform 300ms ease');
+    $('.header-fixed').css('-webkit-transform','translateX(256px)');
+    $('.header-fixed').css('transform','translateX(256px)');
+});
+
+
+
+
+window.onload = function() {
+  ymaps.ready(init);
         var myMap,
             myPlacemark;
 
@@ -17,3 +62,4 @@ ymaps.ready(init);
 			myMap.behaviors.disable('scrollZoom');
 			myMap.behaviors.disable('drag');
         }
+};

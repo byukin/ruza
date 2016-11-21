@@ -13,6 +13,7 @@ html
 body
 	padding 0
 	margin 0
+	background #fff
 .clearfix:after
 	content "."
 	display block
@@ -33,7 +34,9 @@ body
 img
 	max-width 100%
 	width auto
-
+ul,li
+	margin 0
+	padding 0
 /* ------------ Шапка ------------ */
 
 .header
@@ -84,6 +87,96 @@ img
 	float right
 	width 10%
 	text-align right
+
+
+/* ------------ Фикс-шапка ------------ */
+
+.header-fixed
+	background #fff
+	box-shadow 0px 0px 15px 5px rgba(0, 0, 0, 0.1)
+	position fixed
+	display block
+	width 100%
+	top -90px
+	z-index 10
+	transition-duration .3s
+.header-fixed-burger
+	float left
+	width 30%
+	cursor pointer
+.header-fixed-logo
+	float left
+	width 40%
+	text-align center
+	margin-top -15px
+	margin-bottom -45px
+.header-fixed-logo__img
+	width 70px
+.header-fixed-contact
+	float right
+	width 30%
+	text-align right
+.header-fixed-contact__phone
+	display inline-block
+	vertical-align middle
+	margin-right 15px
+.header-fixed-contact__mailto
+	display inline-block
+	vertical-align middle
+
+/* ------------ Меню ------------ */
+.swipe-menu
+	background $color
+	color #fff
+	box-sizing border-box
+	display none
+.swipe-menu-logo
+	width 170px
+	height 50px
+	margin-top 20px
+	margin-left 20px
+	background-image url(icons/swipe-menu-logo.png)
+	background-repeat no-repeat
+.swipe-menu-nav
+	color #fff
+	padding 20px
+	box-sizing border-box
+	border-top 1px solid rgba(255,255,255,0.3)
+.swipe-menu-nav__item
+	list-style-type none
+	margin-bottom 15px
+	&:last-child
+		margin-bottom 0
+.swipe-menu-nav__link
+	text-decoration none
+	color #fff
+.swipe-menu-info
+	color #fff
+	padding 20px
+	font-size .85rem
+	border-top 1px solid rgba(255,255,255,0.3)
+	box-sizing border-box
+.swipe-menu-contact
+	padding 20px
+	border-top 1px solid rgba(255,255,255,0.3)
+.swipe-menu-contact__phone
+	display inline-block
+	background url(icons/phone_icon.png)
+	background-repeat no-repeat
+	background-position center center
+	width 30px
+	height 30px
+	vertical-align middle
+	margin-right 30px
+.swipe-menu-contact__message
+	display inline-block
+	background url(icons/swipe-menu-contact__message.png)
+	background-repeat no-repeat
+	background-position center center
+	width 30px
+	height 30px
+	vertical-align middle
+
 
 /* ------------ Хоум-скрин ------------ */
 
@@ -177,6 +270,7 @@ img
 
 .info-block
 	text-align center
+	background #fff
 .info-block__item
 	margin-top 40px
 .info-block__text
@@ -625,8 +719,98 @@ img
 	font-size 0.80rem
 	margin-top 30px
 
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  box-shadow 0px 0px 20px 5px rgba(0, 0, 0, 0.1)
+  background #fff
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+.fixed-open {
+ 	transform: translate3d(256px, 0px, 0px);
+}
 
 
+/* ------------ Форма ------------ */
 
-
-
+.popup-form
+	display none
+	z-index 100
+	width 100%
+	height 100%
+	position fixed
+	background $color
+	padding 30px
+	box-sizing border-box
+.popup-form__close
+	width 50px
+	height 50px
+	background url(icons/close.png)
+	background-repeat no-repeat
+	background-position center center
+	margin 0 auto
+	cursor pointer
+.popup-form__title
+	color #fff
+	font-size 1.25rem
+	text-transform uppercase
+	font-weight 600
+	text-align center
+	margin-top 20px
+	max-width 640px
+.popup-form__description
+	color #fff
+	text-align center
+	margin-top 20px
+	max-width 640px
+.popup-form form
+	margin-top 30px
+.popup-form__input
+	border 1px solid #0d5d90
+	padding 7px 15px
+	width 100%
+	margin-bottom 10px
+	font-size 1rem
+	border-radius 5px
+.popup-form__textarea
+	border 1px solid #0d5d90
+	padding 5px 15px
+	width 100%
+	min-height 80px
+	vertical-align top
+	margin-bottom 10px
+	font-size 1rem
+	border-radius 5px
+.popup-form__submit
+	border 1px solid #fff
+	background #fccd81
+	border-radius 5px
+	font-size 1.125rem
+	width 100%
+	text-transform uppercase
+	font-weight 600
+	color #333
+	letter-spacing 1px
+	padding 15px

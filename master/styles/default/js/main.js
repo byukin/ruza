@@ -26,8 +26,10 @@ $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 140) {
 	$('.header-fixed').css('top','0px');
+	$('.header-project-fixed').css('top','70px');
   } else {
 	$('.header-fixed').css('top','-90px');
+	$('.header-project-fixed').css('top','-160px');
 
   }
 });
@@ -74,10 +76,11 @@ $(document).ready(function() {
 	});
 	$(".image-slider").owlCarousel({
 
-      navigation : false, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true,
+		navigation : false, // Show next and prev buttons
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true,
+		autoHeight : true,
 
 	});
 });

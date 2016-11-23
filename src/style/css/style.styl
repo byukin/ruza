@@ -106,7 +106,24 @@ h2
 	background-position right center
 	height 30px
 	margin-top -5px
-
+.project-subheader
+	background $color
+	margin-top 0px
+	z-index 1
+.project-subheader-back__link
+	color #fff
+	text-decoration none
+	&:before
+		content ""
+		display inline-block
+		vertical-align middle
+		margin-right 15px
+		margin-top -3px
+		width 35px
+		height 35px
+		background url(icons/back.png)
+		background-size contain
+		background-repeat no-repeat
 
 /* ------------ Фикс-шапка ------------ */
 
@@ -151,6 +168,64 @@ h2
 	background-position right center
 	height 30px
 	width 30px
+
+
+.header-project-fixed
+	background $color
+	box-shadow 0px 0px 15px 5px rgba(0, 0, 0, 0.1)
+	position fixed
+	width 100%
+	top -160px
+	z-index 9
+	left 0
+	right 0
+	padding 20px
+	box-sizing border-box
+	transition-duration .3s
+.header-project-fixed-back
+	float left
+	width 10%
+.header-project-fixed-back__link
+	color #fff
+	text-decoration none
+	&:before
+		content ""
+		display inline-block
+		vertical-align middle
+		margin-right 15px
+		margin-top -3px
+		width 35px
+		height 35px
+		background url(icons/back.png)
+		background-size contain
+		background-repeat no-repeat
+.header-project-fixed__title
+	float right
+	text-align right
+	font-weight bold
+	color #fff
+	font-size 1.35rem
+	width 90%
+.header-project-fixed-info
+	display block
+	clear both
+	width 100%
+	border-top 1px solid rgba(255,255,255,0.2)
+	padding-top 10px
+	margin-top 15px
+.header-project-fixed-info__item
+	list-style-type none
+	color $color
+	background #fff
+	display inline-block
+	width 35px
+	height 35px
+	border-radius 50%
+	text-align center
+	font-weight bold
+	box-sizing border-box
+	padding-top 6px
+
 
 /* ------------ Меню ------------ */
 .swipe-menu

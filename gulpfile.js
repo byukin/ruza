@@ -13,6 +13,7 @@ var gulp = require('gulp'),
 var path = {
     master: { //куда складывать собранные
         html: 'master/',
+		includes: 'master/includes/',
         js: 'master/styles/default/js/',
         css: 'master/styles/default/css/',
         icons: 'master/styles/default/css/icons/',
@@ -21,6 +22,7 @@ var path = {
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.jade',
+		includes: 'src/includes/*.jade',
         js: 'src/js/main.js',
         css: 'src/style/css/*.styl',
         img: 'src/style/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
@@ -36,8 +38,8 @@ gulp.task('webserver', ['watch'], function() {
       livereload: true,
       directoryListing: true,
       open: true,
-	  //host: '10.100.100.56',
-	  // port: 8000
+	  host: '10.100.100.56',
+	  port: 8000
     }));
 });
 
@@ -81,6 +83,15 @@ gulp.task('jade', function () {
         .pipe(gulp.dest(path.master.html))
         .pipe(livereload());
 });
+gulp.task('includes', function () {
+    gulp.src(path.src.includes)
+        .pipe(jade({
+              pretty: '\t'
+            }))
+        .on('error', console.log)
+        .pipe(gulp.dest(path.master.includes))
+        .pipe(livereload());
+});
 
 gulp.task('autoprefixer', function () {
     gulp.src(path.master.css+'*.css')
@@ -116,6 +127,7 @@ gulp.task('htmlprettify', function() {
 gulp.task('watch', function(){
     livereload.listen();
     gulp.watch(path.src.html,['jade']);
+	gulp.watch(path.src.includes,['includes']);
     gulp.watch(path.src.css,['stylus']);
     gulp.watch(path.master.css,['autoprefixer']);
 });

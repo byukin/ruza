@@ -1,0 +1,45 @@
+nav#menu.swipe-menu
+	.swipe-menu-logo
+	.swipe-menu-nav
+		ul
+			li.swipe-menu-nav__item
+				a(href="conception.html").swipe-menu-nav__link Концепция поселка
+			li.swipe-menu-nav__item
+				a(href="").swipe-menu-nav__link Рядом
+			li.swipe-menu-nav__item
+				a(href="").swipe-menu-nav__link Проекты домов
+			li.swipe-menu-nav__item
+				a(href="").swipe-menu-nav__link План поселка
+			li.swipe-menu-nav__item
+				a(href="").swipe-menu-nav__link Акции
+			li.swipe-menu-nav__item
+				a(href="").swipe-menu-nav__link Новости
+			li.swipe-menu-nav__item
+				a(href="").swipe-menu-nav__link Документы
+			li.swipe-menu-nav__item
+				a(href="").swipe-menu-nav__link Контакты
+	.swipe-menu-info Коттеджный поселок «Белая Руза» Новорижское шоссе, 65 км от МКАД
+	.swipe-menu-contact
+		.swipe-menu-contact__phone
+		.swipe-menu-contact__message
+
+section.popup-form
+	.popup-form__close
+	.popup-form__title Будьте в курсе событий о вашем доме
+	form(action="/")
+		input(type="text" placeholder="Ваше имя").popup-form__input
+		input(type="text" placeholder="Ваш телефон").popup-form__input
+		input(type="textarea" placeholder="Ваш комментарий").popup-form__textarea
+		button(type="submit").popup-form__submit Оставить запрос
+
+section.header-fixed.clearfix
+	.header-fixed-burger.toggle-button-fixed
+		img(src="styles/default/css/icons/burger.png").header-fixed-burger__img
+	.header-fixed-logo
+		a(href="/").header-fixed-logo__link
+			img(src="styles/default/css/img/logo.png").header-fixed-logo__img
+	.header-fixed-contact
+		.header-fixed-contact__phone
+			a(href="").header-fixed-contact__link
+				img(src="styles/default/css/icons/header-fixed-phone.png").header-fixed-contact__img
+		.header-fixed-contact__message

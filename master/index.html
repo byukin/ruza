@@ -10,7 +10,7 @@
 		<link href="styles/default/css/style.css" rel="stylesheet"/>
 	</head>
 	<body>
-		<!-- http://5xuo8s.axshare.com/белая_руза___главная_страница.html-->
+		<!-- includes/elements-->
 		<nav id="menu" class="swipe-menu">
 			<div class="swipe-menu-logo"></div>
 			<div class="swipe-menu-nav">
@@ -46,22 +46,21 @@
 			<div class="header-fixed-logo"><a href="/" class="header-fixed-logo__link"><img src="styles/default/css/img/logo.png" class="header-fixed-logo__img"/></a></div>
 			<div class="header-fixed-contact">
 				<div class="header-fixed-contact__phone"><a href="" class="header-fixed-contact__link"><img src="styles/default/css/icons/header-fixed-phone.png" class="header-fixed-contact__img"/></a></div>
-				<div class="header-fixed-contact__mailto">
-					<div class="header-fixed-contact__link"><img src="styles/default/css/icons/mail_icon.svg" class="header-fixed-contact__img"/></div>
-				</div>
+				<div class="header-fixed-contact__message"></div>
 			</div>
 		</section>
 		<main id="panel">
+			<!-- includes/header-->
 			<section class="header layout clearfix">
 				<div class="header-adress">Новорижское шоссе, <br>65 км от МКАД</div>
-				<div class="header-logo"><a href="/" class="header-logo__link"><img src="styles/default/css/img/logo.png" class="header-logo__img"/></a></div>
-				<div class="header-phone">+7 (495) <nobr><strong>123-45-67</strong></nobr></div>
+				<div class="header-logo"><a href="/" class="header-logo__link"><img src="styles/default/css/img/logo.png" class="header-logo__img"/></a></div><a href="tel:+74951234567" class="header-phone">+7 (495) <strong>123-45-67</strong></a>
 			</section>
 			<section class="subheader layout clearfix">
 				<div class="subheader-burger toggle-button"><img src="styles/default/css/icons/burger.png" class="subheader-burger__img"/></div>
 				<div class="subheader-logo"><a href="/" class="sybheader-logo__link"><img src="styles/default/css/img/belayaruza.png" class="subheader-logo__img"/></a></div>
-				<div class="subheader-mailto"><a href="" class="subheader-mailto__link"><img src="styles/default/css/icons/mail_icon.svg" class="subheader-mailto__img"/></a></div>
+				<div class="subheader-contact__message"></div>
 			</section>
+			<!-- includes/home-screen-->
 			<section class="home-screen layout">
 				<h1 class="home-screen__title"><span>Котеджный поселок</span> на новой риге</h1>
 				<div class="home-screen-offer">
@@ -70,6 +69,7 @@
 				</div>
 				<div class="home-screen-description">готовый дом с участком, газом, водоснабжением, канализацией и электричеством</div>
 			</section>
+			<!-- includes/info-block-->
 			<section class="info-block layout">
 				<div class="info-block__item"><img src="styles/default/css/icons/info-1.png" class="info-block__img"/>
 					<div class="info-block__text">Охраняемый коттеджный посёлок со сложившейся инфраструктурой</div>
@@ -81,6 +81,7 @@
 					<div class="info-block__text">Парки, пруды, места для рыбалки и отдыха,исторические сосны, заботливо посаженные 200 лет назад князем Гагариным</div>
 				</div>
 			</section>
+			<!-- includes/houses-->
 			<section class="houses layout">
 				<div class="houses-item clearfix">
 					<div class="houses-item__thumbnail"><a href=""><img src="styles/default/css/img/houses-item-1.png" class="houses-item__img"/></a>
@@ -117,9 +118,11 @@
 				</div>
 				<button class="houses__button">Показать еще</button>
 			</section>
+			<!-- includes/area-->
 			<section class="area layout clearfix"><img src="styles/default/css/img/area.png" class="area__img"/>
 				<div class="area__share"><img src="styles/default/css/icons/area-share.png"/>Поделиться</div><a href="href" class="area__mailto"><img src="styles/default/css/icons/area-mailto.png"/>В почту</a>
 			</section>
+			<!-- includes/goods-->
 			<section class="goods layout clearfix">
 				<h2 class="goods__title">Почему <span>у нас хорошо</span></h2>
 				<div class="goods-item">
@@ -151,6 +154,7 @@
 					<div class="goods-item__title">высокие заборы</div>
 				</div>
 			</section>
+			<!-- includes/location-->
 			<section class="location layout clearfix">
 				<h2 class="location__title">Расположение поселка</h2>
 				<div class="location-map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ooPt9RCYa4Xf_8bkV-ZzzZNUnolmwos7&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
@@ -168,6 +172,7 @@
 				</div>
 				<div class="location__comment">От МКАДа до Белой Рузы вы добираетесь без светофоров! Вообще!</div>
 			</section>
+			<!-- includes/about-block-->
 			<section class="about-block layout clearfix">
 				<h2 class="about-block__title">Белая руза</h2>
 				<div class="about-block__text"><p><strong>Это охраняемый коттеджный посёлок на новорижксом шоссе площадью 35 гектар, где можно просто купить себе дачу</strong></p> <p>Внутри коттеджного поселка созданы каскадные пруды с природными перешейками, вокруг которых располагается зона отдыхас лавочками и древним родником. А для детей предусмотрена современная детская площадка с игровыми конструкциями</p></div>
@@ -196,14 +201,16 @@
 					<div class="about-block-item__title">Истра <span>46км</span></div>
 				</div>
 			</section>
+			<!-- includes/conception-->
 			<section class="conception layout">
 				<h2 class="conception__title">Концепция посёлка</h2>
 				<div class="conception__text"><p><strong>Коттеджный поселок на Новой Риге «Белая Руза» является продолжением современной деревни «Бородёнки», где есть парк, водоёмы и дорожки для прогулок</strong></p> <p>На территории самого поселка обустроены три пруда с беседками для рыбалки и зоной отдыха для барбекю. А в 17 км от нас находится живописное озерниское водохранилище, на песчаном берегу которого оборудован пляж, прокат гидроциклов, кафе, пирс, парковка и детская площадка.</p></div>
 			</section>
+			<!-- includes/seo	-->
 			<section class="seo layout">Коттеджный поселок на Новой Риге «Белая Руза» располагается на землях, ранее принадлежавших княжескому роду Гагариных, вплотную прилегая к исторической аллее 200-х летних сосен, посаженных по распоряжению княжны Варвары Николаевны Голицыной (жены князя) для конных прогулок. В этих великолепных местах прошло детство известных сестёр Гагариных. Одна из них в последствии стала женой «белого генерала» Михаила Дмитриевича Скобелева, участника Русско-турецкой</section>
-			<section class="footer layout cleaefix">
-				<div class="footer__phone">+7 (495) 123-45-67</div>
-				<div class="footer__mailto"><a href="" class="footer__mailto-link">Напишите нам</a></div>
+			<!-- includes/footer-->
+			<section class="footer layout cleaefix"><a href="tel:+74951234567" class="footer__phone">+7 (495) 123-45-67</a>
+				<div class="footer__contact">Напишите нам</div>
 				<div class="footer__logo">Коттеджный поселок «Белая Руза» Новорижское шоссе, 65 км от МКАД © 2016</div>
 				<div class="footer-social">
 					<div class="footer-social__item vk"></div>
@@ -219,6 +226,7 @@
 			</section>
 		</main>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 		<script src="styles/default/js-libs/slideout/slideout.js"></script>
 		<script src="styles/default/js/main.js"></script>

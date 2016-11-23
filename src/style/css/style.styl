@@ -41,10 +41,19 @@ ul,li
 .image-slider
 	margin-top 20px
 	margin-bottom 20px
+.page
+	position relative
+	background #e4d7c0
+h2
+	color #000
+	text-transform uppercase
+	letter-spacing 2px
+	text-align center
 /* ------------ Шапка ------------ */
 
 .header
 	background-image url(img/grass.png)
+	overflow hidden
 .header-adress
 	color #fff
 	font-size 0.875rem
@@ -54,6 +63,7 @@ ul,li
 	width 30%
 	float right
 	color #fff
+	text-decoration none
 	&:before
 		content ""
 		display inline-block
@@ -81,16 +91,21 @@ ul,li
 	cursor pointer
 	float left
 	width 10%
-	margin-top -2px
+	margin-top 3px
 .subheader-logo
 	text-align center
 	float left
 	width 80%
-	margin-top -5px
-.subheader-mailto
+	margin-top 0px
+.subheader-contact__message
 	float right
 	width 10%
 	text-align right
+	background url(icons/mail_icon.svg)
+	background-repeat no-repeat
+	background-position right center
+	height 30px
+	margin-top -5px
 
 
 /* ------------ Фикс-шапка ------------ */
@@ -111,6 +126,7 @@ ul,li
 	float left
 	width 30%
 	cursor pointer
+	margin-top 5px
 .header-fixed-logo
 	float left
 	width 40%
@@ -127,9 +143,14 @@ ul,li
 	display inline-block
 	vertical-align middle
 	margin-right 15px
-.header-fixed-contact__mailto
+.header-fixed-contact__message
 	display inline-block
 	vertical-align middle
+	background url(icons/mail_icon.svg)
+	background-repeat no-repeat
+	background-position right center
+	height 30px
+	width 30px
 
 /* ------------ Меню ------------ */
 .swipe-menu
@@ -292,13 +313,13 @@ ul,li
 	margin-top 30px
 .houses-item
 	margin-bottom 30px
-	@media (min-width: 480px)
+	@media (min-width: 640px)
 		width 48%
 		float left
 		margin-top 0px
 		&:nth-child(2n)
 			float right
-	@media (min-width: 840px)
+	@media (min-width: 900px)
 		width 32%
 		margin-right 2%
 		float left
@@ -639,6 +660,8 @@ ul,li
 	position relative
 .footer__phone
 	font-weight 600
+	color #fff
+	text-decoration none
 	&:before
 		content ""
 		display inline-block
@@ -649,7 +672,7 @@ ul,li
 		height 30px
 		vertical-align middle
 		margin-right 10px
-.footer__mailto
+.footer__contact
 	margin-top 10px
 	&:before
 		content ""
@@ -661,10 +684,6 @@ ul,li
 		height 30px
 		vertical-align middle
 		margin-right 10px
-.footer__mailto-link
-	text-decoration none
-	color #fff
-	border-bottom 1px solid rgba(255,255,255,0.4)
 .footer__logo
 	background url(icons/footer__logo.png)
 	width 130px
@@ -749,7 +768,7 @@ ul,li
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .slideout-open .slideout-menu {

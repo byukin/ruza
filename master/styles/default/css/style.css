@@ -341,7 +341,7 @@ h2 {
 }
 /* ------------ Дома ------------ */
 .houses {
-  background: #cdb68b;
+  background: #e4d7c0;
   margin-top: 30px;
 }
 .houses-item {
@@ -433,6 +433,80 @@ h2 {
   font-size: 1.25rem;
   text-align: center;
   display: block;
+}
+/* ------------ Проекты домов ------------ */
+.projects-item {
+  margin-bottom: 30px;
+}
+@media (min-width: 640px) {
+  .projects-item {
+    width: 48%;
+    float: left;
+    margin-top: 0px;
+  }
+  .projects-item:nth-child(2n) {
+    float: right;
+  }
+}
+@media (min-width: 900px) {
+  .projects-item {
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+    margin-top: 0px;
+  }
+  .projects-item:nth-child(2n) {
+    float: left;
+  }
+  .projects-item:nth-child(3n) {
+    float: right;
+    margin-right: 0%;
+  }
+}
+.projects-item__thumbnail {
+  position: relative;
+}
+.projects-item__img {
+  width: 100%;
+}
+.projects-item__floors {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #0490d7;
+  color: #fff;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  padding: 5px 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.projects-item__floors span {
+  display: block;
+  font-size: 1rem;
+}
+.projects-item-info {
+  width: 50%;
+  float: left;
+  margin-top: 10px;
+}
+.projects-item-info__title {
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+.projects-item-info__title span {
+  font-weight: normal;
+  display: inline-block;
+}
+.projects-item-rooms {
+  float: right;
+  width: 50%;
+  margin-top: 10px;
+  text-align: right;
+}
+.projects-item-rooms__item {
+  list-style-type: none;
 }
 /* ------------ Территория ------------ */
 .area__img {

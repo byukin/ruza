@@ -90,7 +90,6 @@ gulp.task('includes', function () {
             }))
         .on('error', console.log)
         .pipe(gulp.dest(path.master.includes))
-        .pipe(livereload());
 });
 
 gulp.task('autoprefixer', function () {
@@ -127,7 +126,7 @@ gulp.task('htmlprettify', function() {
 gulp.task('watch', function(){
     livereload.listen();
     gulp.watch(path.src.html,['jade']);
-	gulp.watch(path.src.includes,['includes']);
+	gulp.watch(path.src.includes,['includes','jade']);
     gulp.watch(path.src.css,['stylus']);
     gulp.watch(path.master.css,['autoprefixer']);
 });

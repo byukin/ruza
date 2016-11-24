@@ -86,7 +86,7 @@
 			<!-- includes/houses-->
 			<section class="houses layout">
 				<div class="houses-item clearfix">
-					<div class="houses-item__thumbnail"><a href=""><img src="styles/default/css/img/houses-item-1.png" class="houses-item__img"/></a>
+					<div class="houses-item__thumbnail"><a href="house.html"><img src="styles/default/css/img/houses-item-1.png" class="houses-item__img"/></a>
 						<div class="houses-item__payment">Рассрочка - 10 лет</div>
 						<div class="houses-item__area">81<span>м<sup>2</sup></span></div>
 					</div>
@@ -97,7 +97,7 @@
 					<div class="houses-item__sector">Участок 11,34 соток</div>
 				</div>
 				<div class="houses-item clearfix">
-					<div class="houses-item__thumbnail"><a href=""><img src="styles/default/css/img/houses-item-2.png" class="houses-item__img"/></a>
+					<div class="houses-item__thumbnail"><a href="house.html"><img src="styles/default/css/img/houses-item-2.png" class="houses-item__img"/></a>
 						<div class="houses-item__payment">Рассрочка - 10 лет</div>
 						<div class="houses-item__area">98<span>м<sup>2</sup></span></div>
 					</div>
@@ -108,7 +108,7 @@
 					<div class="houses-item__sector">Участок 12,344 соток</div>
 				</div>
 				<div class="houses-item clearfix">
-					<div class="houses-item__thumbnail"><a href=""><img src="styles/default/css/img/houses-item-3.png" class="houses-item__img"/></a>
+					<div class="houses-item__thumbnail"><a href="house.html"><img src="styles/default/css/img/houses-item-3.png" class="houses-item__img"/></a>
 						<div class="houses-item__payment">Рассрочка - 10 лет</div>
 						<div class="houses-item__area">45<span>м<sup>2</sup></span></div>
 					</div>
@@ -122,7 +122,10 @@
 			</section>
 			<!-- includes/area-->
 			<section class="area layout clearfix"><img src="styles/default/css/img/area.png" class="area__img"/>
-				<div class="area__share"><img src="styles/default/css/icons/area-share.png"/>Поделиться</div><a href="href" class="area__mailto"><img src="styles/default/css/icons/area-mailto.png"/>В почту</a>
+				<!-- includes/share-->
+				<div class="share clearfix">
+					<div class="share-social"><img src="styles/default/css/icons/area-share.png"/>Поделиться</div><a href="href" class="share-mailto"><img src="styles/default/css/icons/area-mailto.png"/>В почту</a>
+				</div>
 			</section>
 			<!-- includes/goods-->
 			<section class="goods layout clearfix">
@@ -168,9 +171,8 @@
 						<div class="location-share__social"><img src="styles/default/css/icons/area-share.png"/>Поделиться</div>
 					</div>
 					<div class="location-share__item"><a href="href" class="location-share__mailto"><img src="styles/default/css/icons/area-mailto.png"/>В почту</a></div>
-					<div class="location-share__item">
-						<div class="location-share__navigator"><img src="styles/default/css/icons/location-share-navigator.png"/>Поделиться</div>
-					</div>
+					<div class="location-share__item"><a href="yandexnavi://build_route_on_map?lat_to=55.72355770&amp;lon_to=36.20014961" class="location-share__navigator-link">
+							<div class="location-share__navigator"><img src="styles/default/css/icons/location-share-navigator.png"/>Навигатор</div></a></div>
 				</div>
 				<div class="location__comment">От МКАДа до Белой Рузы вы добираетесь без светофоров! Вообще!</div>
 			</section>
@@ -228,7 +230,6 @@
 			</section>
 		</main>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 		<script src="styles/default/js-libs/slideout/slideout.js"></script>
 		<script src="styles/default/js/main.js"></script>

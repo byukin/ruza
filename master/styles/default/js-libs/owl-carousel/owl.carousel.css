@@ -99,10 +99,11 @@
 }
 .owl-pagination {
 	z-index: 1000;
-	position: relative;
+	position: absolute;
 	display: block;
 	text-align: center;
-	margin: 0 auto;
+	width: 100%;
+	margin: auto;
 	margin-top: 20px;
 }
 .owl-page {

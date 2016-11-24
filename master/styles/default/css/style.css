@@ -42,17 +42,64 @@ li {
 }
 .image-slider {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 .page {
   position: relative;
   background: #e4d7c0;
 }
-h2 {
+table {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+tr {
+  background: rgba(255,255,255,0.4);
+}
+tr:nth-child(2n) {
+  background: rgba(255,255,255,0);
+}
+td {
+  padding: 10px;
+}
+td:nth-child(2n) {
+  text-align: right;
+  font-weight: bold;
+}
+span.line {
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  border-top: 1px solid rgba(0,0,0,0.3);
+}
+button {
+  background: #0490d7;
+  width: 100%;
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+  border: none;
+  margin-top: 30px;
+}
+.page h2 {
   color: #000;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
+}
+.page h3 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+.page h4 {
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-weight: 600;
 }
 /* ------------ Шапка ------------ */
 .header {
@@ -120,6 +167,7 @@ h2 {
   height: 30px;
   margin-top: -5px;
 }
+/*-------- Шапка проекта -------------- */
 .project-subheader {
   background: #0490d7;
   margin-top: 0px;
@@ -140,6 +188,35 @@ h2 {
   background: url("icons/back.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+.project-subheader__title {
+  float: right;
+  text-align: right;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.35rem;
+  width: 90%;
+}
+.project-subheader-info {
+  display: block;
+  clear: both;
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 10px;
+  margin-top: 15px;
+}
+.project-subheader-info__item {
+  list-style-type: none;
+  color: #0490d7;
+  background: #fff;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-top: 6px;
 }
 /* ------------ Фикс-шапка ------------ */
 .header-fixed {
@@ -189,68 +266,6 @@ h2 {
   background-position: right center;
   height: 30px;
   width: 30px;
-}
-.header-project-fixed {
-  background: #0490d7;
-  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
-  position: fixed;
-  width: 100%;
-  top: -160px;
-  z-index: 9;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  box-sizing: border-box;
-  transition-duration: 0.3s;
-}
-.header-project-fixed-back {
-  float: left;
-  width: 10%;
-}
-.header-project-fixed-back__link {
-  color: #fff;
-  text-decoration: none;
-}
-.header-project-fixed-back__link:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 15px;
-  margin-top: -3px;
-  width: 35px;
-  height: 35px;
-  background: url("icons/back.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.header-project-fixed__title {
-  float: right;
-  text-align: right;
-  font-weight: bold;
-  color: #fff;
-  font-size: 1.35rem;
-  width: 90%;
-}
-.header-project-fixed-info {
-  display: block;
-  clear: both;
-  width: 100%;
-  border-top: 1px solid rgba(255,255,255,0.2);
-  padding-top: 10px;
-  margin-top: 15px;
-}
-.header-project-fixed-info__item {
-  list-style-type: none;
-  color: #0490d7;
-  background: #fff;
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  text-align: center;
-  font-weight: bold;
-  box-sizing: border-box;
-  padding-top: 6px;
 }
 /* ------------ Меню ------------ */
 .swipe-menu {
@@ -582,6 +597,15 @@ h2 {
   font-weight: normal;
   display: inline-block;
 }
+.projects-item-info__price {
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+.projects-item-info__price span {
+  font-weight: bold;
+  font-family: 'ALS Rubl';
+  display: inline-block;
+}
 .projects-item-rooms {
   float: right;
   width: 50%;
@@ -595,7 +619,7 @@ h2 {
 .area__img {
   width: 100%;
 }
-.area__share {
+.share-social {
   background: #0490d7;
   color: #fff;
   padding: 10px;
@@ -605,11 +629,11 @@ h2 {
   float: left;
   margin-top: 15px;
 }
-.area__share img {
+.share-social img {
   display: block;
   margin: 0 auto;
 }
-.area__mailto {
+.share-mailto {
   background: #0490d7;
   display: block;
   text-decoration: none;
@@ -621,7 +645,7 @@ h2 {
   float: right;
   margin-top: 15px;
 }
-.area__mailto img {
+.share-mailto img {
   display: block;
   margin: 0 auto;
 }
@@ -769,6 +793,11 @@ h2 {
   float: right;
 }
 .location-share__mailto {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.location-share__navigator-link {
   display: block;
   text-decoration: none;
   color: #fff;

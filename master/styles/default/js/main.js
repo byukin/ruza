@@ -46,9 +46,14 @@ $(document).ready(function() {
 			$('.swipe-menu').css('left','-256px');
 
 		},
-		threshold:30
+		threshold:50
 	});
-	$('.image-slider , .image-slider *').swipe("disable");
+
+	$('.subheader-burger , .header-fixed-burger').click(function(){
+		$('.swipe-menu').css('left','0px');
+	});
+
+	$(".image-slider").addClass('noSwipe');
 
 	$('.subheader-contact__message , .header-fixed-contact__message , .swipe-menu-contact__message , .footer__contact').click(function() {
 		$('.popup-form').fadeIn(100);

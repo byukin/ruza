@@ -126,6 +126,7 @@ button {
   float: right;
   color: #fff;
   text-decoration: none;
+  border: none;
 }
 .header-phone:before {
   content: "";
@@ -149,6 +150,9 @@ button {
   position: relative;
   z-index: 10;
 }
+.header-logo__link {
+  border: none;
+}
 .subheader {
   background: #fff;
   margin-top: -35px;
@@ -165,6 +169,9 @@ button {
   float: left;
   width: 80%;
   margin-top: 0px;
+}
+.sybheader-logo__link {
+  border: none;
 }
 .subheader-contact__message {
   float: right;
@@ -185,6 +192,7 @@ button {
 .project-subheader-back__link {
   color: #fff;
   text-decoration: none;
+  border: none;
 }
 .project-subheader-back__link:before {
   content: "";
@@ -254,6 +262,9 @@ button {
   margin-top: -15px;
   margin-bottom: -45px;
 }
+.header-fixed-logo__link {
+  border: none;
+}
 .header-fixed-logo__img {
   width: 70px;
 }
@@ -275,6 +286,9 @@ button {
   background-position: right center;
   height: 30px;
   width: 30px;
+}
+.header-fixed-contact__link {
+  border: none;
 }
 /* ------------ Меню ------------ */
 .swipe-menu {
@@ -318,6 +332,7 @@ button {
 .swipe-menu-nav__link {
   text-decoration: none;
   color: #fff;
+  border: none;
 }
 .swipe-menu-info {
   color: #fff;
@@ -663,6 +678,7 @@ button {
   text-align: center;
   width: 49%;
   float: right;
+  border: none;
   margin-top: 15px;
 }
 .share-mailto img {
@@ -816,11 +832,13 @@ button {
   display: block;
   text-decoration: none;
   color: #fff;
+  border: none;
 }
 .location-share__navigator-link {
   display: block;
   text-decoration: none;
   color: #fff;
+  border: none;
 }
 .location__comment {
   position: relative;
@@ -963,6 +981,7 @@ button {
   font-weight: 600;
   color: #fff;
   text-decoration: none;
+  border: none;
 }
 .footer__phone:before {
   content: "";

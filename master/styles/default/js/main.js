@@ -37,23 +37,25 @@ $(document).scroll(function() {
 
 
 $(document).ready(function() {
-	$(this).on("swiperight",function(event){
-		$('.swipe-menu').css('left','0px');
-		$('body').css('padding-left','256px');
+	$('body').swipe({
+		swipeRight:function(){
+			$('.swipe-menu').css('left','0px');
+
+		},
+		swipeLeft:function(){
+			$('.swipe-menu').css('left','-256px');
+
+		},
+		threshold:30
 	});
-	$(this).on("swipeleft",function(){
-	 	$('.swipe-menu').css('left','-256px');
-		$('body').css('padding-left','0px');
-	});
+	$('.image-slider , .image-slider *').swipe("disable");
+
 	$('.subheader-contact__message , .header-fixed-contact__message , .swipe-menu-contact__message , .footer__contact').click(function() {
 		$('.popup-form').fadeIn(100);
 	});
 	$('.popup-form__close').click(function() {
 		$('.popup-form').fadeOut(100);
 	});
-
-
-
 	$(".image-slider").owlCarousel({
 
 		navigation : false, // Show next and prev buttons

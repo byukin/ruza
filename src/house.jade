@@ -15,91 +15,86 @@ html
 		include includes/popup-form
 		// includes/header-fixed
 		include includes/header-fixed
-		main#panel
-			// includes/header
-			include includes/header
-			// includes/project-subheader
-			include includes/project-subheader
-			.page.layout
-				h2 Владение дома №111 <br>проект каспий
-				.projects-item.clearfix
-					.projects-item__thumbnail
-						.image-slider
-							img(src="http://10.100.100.56:8000/master/styles/default/css/img/houses-item-1.png")
-							img(src="http://10.100.100.56:8000/master/styles/default/css/img/houses-item-1.png")
-						.projects-item__floors 4<span>этажа</span>
-					.projects-item-info
-						.projects-item-info__price 6 500 000 <span>a</span>
-					.projects-item-rooms
-						ul
-							li.projects-item-rooms__item Спален: <strong>3</strong>
-							li.projects-item-rooms__item Ванных комнат: <strong>5</strong>
-				center Участок, на котором построен этот готовый дом в коттеджном поселке, имеет площадь 16,69 соток и располагается на центральном бульваре, с видом на историческую аллею 230-х летних сосен, посаженных князем Гагариным для конных прогулок. Адрес: Коттеджный поселок на Новой Риге, «Белая Руза», Рябиновая роща, Владение 053.
-				center <h3>Адрес</h3>Коттеджный поселок на Новой Риге, «Белая руза», Дубовая роща, Владение 111
-				center <h2>Характеристики</h2>
+		// includes/header
+		include includes/header
+		// includes/project-subheader
+		include includes/project-subheader
+		.page.layout
+			h2 Владение дома №111 <br>проект каспий
+			.projects-item.clearfix
+				.projects-item__thumbnail
+					.image-slider
+						img(src="http://10.100.100.56:8000/master/styles/default/css/img/houses-item-1.png")
+						img(src="http://10.100.100.56:8000/master/styles/default/css/img/houses-item-1.png")
+					.projects-item__floors 4<span>этажа</span>
+				.projects-item-info
+					.projects-item-info__price 6 500 000 <span>a</span>
+				.projects-item-rooms
+					ul
+						li.projects-item-rooms__item Спален: <strong>3</strong>
+						li.projects-item-rooms__item Ванных комнат: <strong>5</strong>
+			center Участок, на котором построен этот готовый дом в коттеджном поселке, имеет площадь 16,69 соток и располагается на центральном бульваре, с видом на историческую аллею 230-х летних сосен, посаженных князем Гагариным для конных прогулок. Адрес: Коттеджный поселок на Новой Риге, «Белая Руза», Рябиновая роща, Владение 053.
+			center <h3>Адрес</h3>Коттеджный поселок на Новой Риге, «Белая руза», Дубовая роща, Владение 111
+			center <h2>Характеристики</h2>
 
 
-				table
-					tr
-						td Площадь дома:
-						td 81 м<sup>2</sup>
-					tr
-						td Тип фундамента:
-						td ж/б плита
-					tr
-						td Количество этажей:
-						td 1
-					tr
-						td Количество спален:
-						td 3
-					tr
-						td Всего комнат:
-						td 4
-					tr
-						td Спальни на обоих этажах:
-						td -
-					tr
-						td Полноценная высота:
-						td 3 м
-					tr
-						td Евростудия*:
-						td +
-					tr
-						td Выход из кухни на террасу:
-						td +
-					tr
-						td Встроенная зона барбекю:
-						td +
-					tr
-						td Электропроводка:
-						td по желанию
-					tr
-						td Система отопления:
-						td по желанию
-					tr
-						td Канализация:
-						td по желанию
-					tr
-						td Вывод кондиционеров:
-						td +
-					tr
-						td SAT в каждой комнате:
-						td +
-					tr
-						td Котельная:
-						td доп.услуга
-					tr
-						td Ниши под шкафы и купе:
-						td +
-				| <em>* Под Евростудией понимается кухня, совмещенная с гостиницей</em>
+			table
+				tr
+					td Площадь дома:
+					td 81 м<sup>2</sup>
+				tr
+					td Тип фундамента:
+					td ж/б плита
+				tr
+					td Количество этажей:
+					td 1
+				tr
+					td Количество спален:
+					td 3
+				tr
+					td Всего комнат:
+					td 4
+				tr
+					td Спальни на обоих этажах:
+					td -
+				tr
+					td Полноценная высота:
+					td 3 м
+				tr
+					td Евростудия*:
+					td +
+				tr
+					td Выход из кухни на террасу:
+					td +
+				tr
+					td Встроенная зона барбекю:
+					td +
+				tr
+					td Электропроводка:
+					td по желанию
+				tr
+					td Система отопления:
+					td по желанию
+				tr
+					td Канализация:
+					td по желанию
+				tr
+					td Вывод кондиционеров:
+					td +
+				tr
+					td SAT в каждой комнате:
+					td +
+				tr
+					td Котельная:
+					td доп.услуга
+				tr
+					td Ниши под шкафы и купе:
+					td +
+			| <em>* Под Евростудией понимается кухня, совмещенная с гостиницей</em>
 
-				// includes/share
-				include includes/share
-			// includes/footer
-			include includes/footer
-
-		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
-		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
-		script(src="styles/default/js-libs/slideout/slideout.js")
-		script(src="styles/default/js-libs/owl-carousel/owl.carousel.js")
-		script(src="styles/default/js/main.js")
+			// includes/share
+			include includes/share
+		// includes/footer
+		include includes/footer
+		// includes/scripts
+		include includes/scripts

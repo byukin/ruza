@@ -596,6 +596,9 @@ button {
     margin-right: 0%;
   }
 }
+.projects-item_single {
+  margin-bottom: 30px;
+}
 .projects-item__thumbnail {
   position: relative;
 }

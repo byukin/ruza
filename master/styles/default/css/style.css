@@ -1115,10 +1115,11 @@ button {
 /* ------------ Форма ------------ */
 .popup-form {
   display: none;
-  z-index: 101;
+  z-index: 100000;
   width: 100%;
   height: 100%;
   position: fixed;
+  top: 0;
   background: #0490d7;
   padding: 30px;
   box-sizing: border-box;
@@ -1157,6 +1158,7 @@ button {
   margin-bottom: 10px;
   font-size: 1rem;
   border-radius: 5px;
+  color: #000;
 }
 .popup-form__textarea {
   border: 1px solid #0d5d90;
